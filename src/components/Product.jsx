@@ -9,17 +9,17 @@ export default class Product extends Component {
     return (
       <div className="col-6 mx-auto col-lg-3 my-3">
         <div className="card">
-          <div
-            className="img-container p-5"
-            onClick={() => console.log(`Image ${id} clicked!`)}
-          >
-            <Link to="/product-details">
+          <Link to="/product-details">
+            <div
+              className="img-container"
+              onClick={() => console.log(`Image ${id} clicked!`)}
+            >
               <img src={img} alt="product" className="card-img-top" />
-            </Link>
-          </div>
-          <div className="card-body text-center text-white">
-            <h5 className="card-title">{title}</h5>
-          </div>
+            </div>
+            <div className="card-body text-center text-white">
+              <h5 className="card-title">{title}</h5>
+            </div>
+          </Link>
         </div>
       </div>
     );

@@ -5,6 +5,7 @@ import logo from "../icon.ico";
 const Navbar = (props) => {
   return (
     <nav className="nav navbar-expand-sm navbar-dark bg-primary justify-content-between align-items-center p-2 sticky-top">
+      {/* Toggler Button */}
       <button
         className="navbar-toggler"
         type="button"
@@ -17,17 +18,19 @@ const Navbar = (props) => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
+      {/* Logo */}
       <Link className="navbar-brand" to="/">
         <img src={logo} alt="logo" className="logo" />
       </Link>
 
+      {/* Cart Button for screens other than small */}
       <Link className="d-sm-none d-block" to="/cart">
         <button className="btn">
           <i className="fas fa-cart-plus"></i> Cart
         </button>
       </Link>
 
-      <div className="collapse navbar-collapse" id="navbar">
+      <div className="collapse navbar-collapse bg-primary" id="navbar">
         <ul className="navbar-nav">
           {/* <li
             className={`nav-item d-md-block d-none ${
@@ -38,6 +41,8 @@ const Navbar = (props) => {
               Home
             </Link>
           </li> */}
+
+          {/* Search box */}
           <li className="nav-item ml-sm-auto">
             <form className="d-flex align-items-center">
               <input
@@ -56,6 +61,7 @@ const Navbar = (props) => {
               props.location.pathname === "/cart" ? "active" : ""
             }`}
           >
+            {/* Cart button for small screens only */}
             <Link className="nav-link d-none d-sm-block" to="/cart">
               <button className="btn">
                 <i className="fas fa-cart-plus"></i> Cart
