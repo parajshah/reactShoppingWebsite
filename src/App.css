@@ -49,7 +49,9 @@ nav ul {
 }
 
 .img-container {
-  padding: 3rem;
+  position: relative;
+  padding: 2.5rem;
+  overflow: hidden;
   transition: all ease 0.5s;
 }
 
@@ -58,12 +60,41 @@ nav ul {
   transition: all ease 0.5s;
 }
 
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(100%, 100%);
+}
+
+.img-container:hover .add-to-cart-btn {
+  transform: translate(0, 0);
+  transition: all 0.5s ease;
+}
+
+.add-to-wishlist-btn {
+  color: lightcoral;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%, -100%);
+}
+
+.add-to-wishlist-btn:hover {
+  color: lightcoral;
+}
+
+.img-container:hover .add-to-wishlist-btn {
+  transform: translate(0, 0);
+  transition: all 0.5s ease;
+}
+
 .card-body {
   border-radius: 0 0 15px 15px;
   background: orange;
 }
 
-.btn {
+.btn.nav-btn {
   background: orange;
   color: white;
 }

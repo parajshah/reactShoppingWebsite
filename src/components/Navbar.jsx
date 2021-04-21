@@ -25,7 +25,7 @@ const Navbar = (props) => {
 
       {/* Cart Button for screens other than small */}
       <Link className="d-sm-none d-block" to="/cart">
-        <button className="btn">
+        <button className="btn nav-btn">
           <i className="fas fa-cart-plus"></i> Cart
         </button>
       </Link>
@@ -51,7 +51,7 @@ const Navbar = (props) => {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn my-2" type="submit">
+              <button className="btn nav-btn my-2" type="submit">
                 <i className="fas fa-search"></i>
               </button>
             </form>
@@ -63,7 +63,7 @@ const Navbar = (props) => {
           >
             {/* Cart button for small screens only */}
             <Link className="nav-link d-none d-sm-block" to="/cart">
-              <button className="btn">
+              <button className="btn nav-btn">
                 <i className="fas fa-cart-plus"></i> Cart
               </button>
             </Link>
