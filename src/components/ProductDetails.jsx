@@ -17,10 +17,10 @@ const ProductDetails = () => {
           inWishlist,
           availability,
         } = value.detailProduct;
-        // console.log(value);
         return (
           <div className="container">
             <div className="row">
+              {/* Title for medium screens and larger */}
               <div className="col-12 mx-auto text-center pt-3 pb-0 d-none d-md-block">
                 <h1>{title}</h1>
                 <hr />
@@ -28,9 +28,11 @@ const ProductDetails = () => {
             </div>
             <div className="row">
               <div className="col-12 mx-auto col-md-6 my-3">
+                {/* Image */}
                 <img src={img} alt="product" className="img-fluid" />
               </div>
               <div className="col-12 mx-auto col-md-6 pb-5 pb-md-0 d-flex flex-column justify-content-center text-capitalize text-md-left">
+                {/* Details & Title upto medium screens */}
                 <div className="text-center pt-3 pb-0 d-block d-md-none">
                   <h1>{title}</h1>
                   <hr />
@@ -49,6 +51,7 @@ const ProductDetails = () => {
                   <b>Shipping Charge :</b> free
                 </h5>
                 <div className="d-flex justify-content-left align-items-center">
+                  {/* Add to cart, wishlist buttons */}
                   <button
                     className="btn btn-primary cart-btn"
                     onClick={() => {
@@ -84,12 +87,14 @@ const ProductDetails = () => {
             </div>
             <div className="row mx-auto mt-3">
               <div className="product-desctiption">
-                <div className="product-description-title text-center text-md-left">
+                {/* Description heading */}
+                <div className="text-center text-md-left">
                   <h4>
                     <b>Description</b>
                   </h4>
                 </div>
                 <hr />
+                {/* Description content */}
                 <div>
                   <p>{info}</p>
                 </div>

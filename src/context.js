@@ -42,39 +42,40 @@ class ProductProvider extends Component {
   };
 
   addToCart = (id) => {
+    // Make temp variable
     let tempProducts = [...this.state.products];
+    // Get index of product
     const index = tempProducts.indexOf(this.getItem(id));
+    // Modify necessary details of product
     const product = tempProducts[index];
     product.inCart = true;
     product.count = 1;
     const price = product.price;
     product.total = price;
-    this.setState(
-      () => {
-        return {
-          products: tempProducts,
-          cart: [...this.state.cart, product],
-        };
-      },
-      () => console.log(this.state)
-    );
+    // Set new state
+    this.setState(() => {
+      return {
+        products: tempProducts,
+        cart: [...this.state.cart, product],
+      };
+    });
   };
 
   addToWishlist = (id) => {
+    // Make temp variable
     let tempProducts = [...this.state.products];
+    // Get index of product
     const index = tempProducts.indexOf(this.getItem(id));
+    // Modify necessary details of product
     const product = tempProducts[index];
     product.inWishlist = true;
-
-    this.setState(
-      () => {
-        return {
-          products: tempProducts,
-          wishlist: [...this.state.wishlist, product],
-        };
-      },
-      () => console.log(this.state)
-    );
+    // Set new state
+    this.setState(() => {
+      return {
+        products: tempProducts,
+        wishlist: [...this.state.wishlist, product],
+      };
+    });
   };
 
   render() {

@@ -6,13 +6,13 @@ import PropTypes from "prop-types";
 export default class Product extends Component {
   render() {
     const { id, title, img, price, inCart, inWishlist } = this.props.product;
-    // console.log(id, title, img, price, inCart, inWishlist);
 
     return (
       <div className="col-6 mx-auto col-lg-3 my-3">
         <div className="card">
           <ProductConsumer>
             {(value) => (
+              // Image container with 2 buttons (Cart, Wishlist)
               <div
                 className="img-container"
                 onClick={() => value.handleDetail(id)}
@@ -53,6 +53,7 @@ export default class Product extends Component {
               </div>
             )}
           </ProductConsumer>
+          {/* Title & Price */}
           <div className="card-body text-center text-white">
             <h6 className="card-title">{title}</h6>
             <p className="m-0">Rate: ${price}</p>
