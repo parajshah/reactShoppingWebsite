@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+body {
+  font-family: "Poppins", cursive, monospace;
+}
+
+/* Navbar */
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -36,6 +44,9 @@ nav ul {
   width: auto;
 }
 
+/* Navbar End */
+
+/* Home Page */
 .main-title {
   color: orange;
 }
@@ -50,13 +61,13 @@ nav ul {
 
 .img-container {
   position: relative;
-  padding: 2.5rem;
+  padding: 3rem;
   overflow: hidden;
   transition: all ease 0.5s;
 }
 
 .img-container:hover {
-  padding: 1.5rem;
+  padding: 2rem;
   transition: all ease 0.5s;
 }
 
@@ -98,3 +109,24 @@ nav ul {
   background: orange;
   color: white;
 }
+
+/* Home Page End */
+
+/* Details Page */
+.cart-btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.wishlist-btn {
+  color: white;
+  background-color: lightcoral;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.wishlist-btn:hover {
+  color: white;
+  background-color: lightcoral;
+}
+
+/* Details Page End */
