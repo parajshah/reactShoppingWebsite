@@ -43,11 +43,11 @@ export default class Product extends Component {
                   disabled={inWishlist ? true : false}
                 >
                   {inWishlist ? (
-                    <p className="m-0">
-                      <i className="fas fa-heart" />
-                    </p>
+                    <span className="m-0">
+                      <i className="fas fa-heart inWishlist" />
+                    </span>
                   ) : (
-                    <p className="m-0">Add to Wishlist</p>
+                    <span className="m-0">Add to Wishlist</span>
                   )}
                 </button>
               </div>
