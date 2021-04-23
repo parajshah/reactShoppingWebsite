@@ -4,8 +4,8 @@ const CartPriceMedium = ({ value }) => {
   const { subTotal, tax, total, clearCart } = value;
 
   return (
-    <div>
-      <div className="cart-page-price-medium my-3">
+    <React.Fragment>
+      <div className="cart-page-price-medium mt-3">
         <div className="px-3 pt-3 text-center">
           <h4>Checkout</h4>
           <hr />
@@ -28,7 +28,7 @@ const CartPriceMedium = ({ value }) => {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

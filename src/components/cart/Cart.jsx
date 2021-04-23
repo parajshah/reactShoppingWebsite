@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ProductConsumer } from "../../context";
 import CartList from "./CartList";
 import Title from "../Title";
@@ -20,8 +21,13 @@ const Cart = () => {
         } else {
           return (
             <div className="container-fluid">
-              <div className="row py-5 d-flex justify-content-center">
+              <div className="row py-5 justify-content-center">
                 <Title name="Cart is" title="Empty :(" />
+              </div>
+              <div className="row justify-content-center">
+                <h1 className="display-5">
+                  <Link to="/">Add something!</Link>
+                </h1>
               </div>
             </div>
           );

@@ -210,7 +210,7 @@ class ProductProvider extends Component {
   addTotals = () => {
     let subTotal = 0;
     this.state.cart.map((item) => {
-      subTotal += item.total;
+      return (subTotal += item.total);
     });
 
     // 18% Tax

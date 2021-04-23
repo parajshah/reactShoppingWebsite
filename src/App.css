@@ -170,8 +170,6 @@ nav ul {
 .cart-page-price-medium {
   /* border-radius: 5px; */
   background-color: #fff;
-  position: fixed;
-  width: 30%;
   box-shadow: 0px 1px 3px black;
 }
 .cart-page-price {
@@ -188,6 +186,10 @@ nav ul {
 .decrement {
   border-radius: 50%;
   border: 1px solid black;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* Cart Page End */
