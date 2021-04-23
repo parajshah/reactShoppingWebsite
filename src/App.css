@@ -2,6 +2,7 @@
 
 body {
   font-family: "Poppins", cursive, monospace;
+  background-color: rgb(247, 247, 247);
 }
 
 /* Navbar */
@@ -41,6 +42,17 @@ nav ul {
 .logo {
   height: 2.5rem;
   width: auto;
+}
+
+.btn.nav-btn {
+  background: orange;
+  color: white;
+}
+
+.btn.nav-btn:hover {
+  background: white;
+  color: orange;
+  border: 1px solid orange;
 }
 
 /* Navbar End */
@@ -108,17 +120,25 @@ nav ul {
   background: orange;
 }
 
-.btn.nav-btn {
-  background: orange;
-  color: white;
-}
-
 /* Home Page End */
 
 /* Details Page */
 .cart-btn {
   padding-left: 1rem;
   padding-right: 1rem;
+  color: white;
+  background-color: #0275d8;
+}
+
+.cart-btn:hover {
+  color: #0275d8;
+  background-color: inherit;
+  border: 1px solid #0275d8;
+}
+
+.cart-btn:disabled {
+  color: white;
+  background-color: #0275d8;
 }
 
 .wishlist-btn {
@@ -128,6 +148,12 @@ nav ul {
   padding-left: 1rem;
 }
 .wishlist-btn:hover {
+  color: lightcoral;
+  background-color: inherit;
+  border: 1px solid lightcoral;
+}
+
+.wishlist-btn:disabled {
   color: white;
   background-color: lightcoral;
 }
@@ -137,18 +163,21 @@ nav ul {
 /* Cart Page */
 .cart-page-details {
   /* border-radius: 5px; */
-  box-shadow: 0px 1px 4px black;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px black;
 }
 
 .cart-page-price-medium {
   /* border-radius: 5px; */
+  background-color: #fff;
   position: fixed;
   width: 30%;
-  box-shadow: 0px 1px 4px black;
+  box-shadow: 0px 1px 3px black;
 }
 .cart-page-price {
   /* border-radius: 5px; */
-  box-shadow: 0px 1px 4px black;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px black;
 }
 
 .increment {

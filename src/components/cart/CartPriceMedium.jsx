@@ -20,7 +20,7 @@ const CartPriceMedium = ({ value }) => {
           <h6 className="py-2 text-center">
             <b>Total :</b> ${total}
           </h6>
-          <div className="d-flex justify-content-center py-2">
+          <div className="d-flex justify-content-center py-2 checkout-btns">
             <button className="btn btn-danger mx-2" onClick={() => clearCart()}>
               Clear Cart
             </button>

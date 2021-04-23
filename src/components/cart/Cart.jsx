@@ -1,7 +1,7 @@
 import React from "react";
-import { ProductConsumer } from "../context";
+import { ProductConsumer } from "../../context";
 import CartList from "./CartList";
-import Title from "./Title";
+import Title from "../Title";
 
 const Cart = () => {
   return (

@@ -9,7 +9,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
-import Cart from "./components/Cart";
+import Cart from "./components/cart/Cart";
 import Default from "./components/Default";
 import Footer from "./components/Footer";
 
