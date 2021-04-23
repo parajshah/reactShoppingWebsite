@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+// Change BrowserRouter -> HashRouter while deploying and add repo name in package.json
 import { BrowserRouter as Router } from "react-router-dom";
 import { ProductProvider } from "./context";
 import reportWebVitals from "./reportWebVitals";

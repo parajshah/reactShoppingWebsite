@@ -191,3 +191,10 @@ nav ul {
 }
 
 /* Cart Page End */
+
+/* Default Page */
+.default-page-link:hover {
+  text-decoration: none;
+}
+
+/* Default Page End */
