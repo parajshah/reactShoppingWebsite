@@ -12,6 +12,7 @@ import ProductDetails from "./components/ProductDetails";
 import Cart from "./components/cart/Cart";
 import Default from "./components/Default";
 import Footer from "./components/Footer";
+import Wishlist from "./components/wishlist/Wishlist";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/" component={ProductList} />
         <Route exact path="/product-details" component={ProductDetails} />
         <Route exact path="/cart" component={Cart} />
+        <Route exact path="/wishlist" component={Wishlist} />
         <Route component={Default} />
       </Switch>
       <Footer />

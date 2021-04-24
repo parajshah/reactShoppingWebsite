@@ -193,17 +193,31 @@ class ProductProvider extends Component {
     );
   };
 
-  // Clear Cart
-  clearCart = () => {
-    this.setState(
-      () => {
-        return { cart: [] };
-      },
-      () => {
-        this.setProducts();
-        this.addTotals();
-      }
-    );
+  // Remove an Item from wiishlist
+  removeWishlistItem = (id) => {
+    // Make temp variables
+    let tempProducts = [...this.state.products];
+    let tempWishlist = [...this.state.wishlist];
+
+    // Filter out product to be removed
+    tempWishlist = tempWishlist.filter((item) => item.id !== id);
+
+    // Find index of product
+    const index = tempProducts.indexOf(this.getItem(id));
+
+    // Find product to be removed
+    const removedProduct = tempProducts[index];
+
+    // Changes
+    removedProduct.inWishlist = false;
+
+    // Set new state
+    this.setState(() => {
+      return {
+        wishlist: [...tempWishlist],
+        products: [...tempProducts],
+      };
+    });
   };
 
   // Find total in Cart
@@ -241,7 +255,7 @@ class ProductProvider extends Component {
           increment: this.increment,
           decrement: this.decrement,
           removeItem: this.removeItem,
-          clearCart: this.clearCart,
+          removeWishlistItem: this.removeWishlistItem,
         }}
       >
         {this.props.children}

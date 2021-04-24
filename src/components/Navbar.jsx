@@ -4,7 +4,7 @@ import logo from "../icon.ico";
 
 const Navbar = (props) => {
   return (
-    <nav className="nav navbar-expand-sm navbar-dark bg-primary justify-content-between align-items-center p-2 sticky-top">
+    <nav className="nav navbar-expand-md navbar-dark bg-primary justify-content-between align-items-center p-2 sticky-top">
       {/* Toggler Button */}
       <button
         className="navbar-toggler"
@@ -46,12 +46,12 @@ const Navbar = (props) => {
           <li className="nav-item ml-sm-auto">
             <form className="d-flex align-items-center">
               <input
-                className="form-control mr-2"
+                className="form-control"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn nav-btn my-2" type="submit">
+              <button className="btn nav-btn m-2" type="submit">
                 <i className="fas fa-search"></i>
               </button>
             </form>
@@ -65,6 +65,17 @@ const Navbar = (props) => {
             <Link className="nav-link d-none d-sm-block" to="/cart">
               <button className="btn nav-btn">
                 <i className="fas fa-cart-plus"></i> Cart
+              </button>
+            </Link>
+          </li>
+          <li
+            className={`nav-item  ${
+              props.location.pathname === "/wishlist" ? "active" : ""
+            }`}
+          >
+            <Link className="nav-link" to="/wishlist">
+              <button className="btn nav-btn">
+                <i className="fas fa-heart"></i> Wishlist
               </button>
             </Link>
           </li>
