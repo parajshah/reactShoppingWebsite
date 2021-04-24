@@ -1,7 +1,7 @@
 import React from "react";
 
 const CartPrice = ({ value }) => {
-  const { subTotal, tax, total, clearCart } = value;
+  const { subTotal, tax, total } = value;
   return (
     <div className="cart-page-price my-3">
       <div className="px-3 pt-3 text-center">

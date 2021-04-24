@@ -1,7 +1,7 @@
 import React from "react";
 
 const CartPriceMedium = ({ value }) => {
-  const { subTotal, tax, total, clearCart } = value;
+  const { subTotal, tax, total } = value;
 
   return (
     <React.Fragment>

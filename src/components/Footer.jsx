@@ -22,7 +22,7 @@ const Footer = (props) => {
           wishlistIsEmpty = true;
         }
 
-        if (currentPage == "/wishlist") {
+        if (currentPage === "/wishlist") {
           return (
             <footer
               className={`text-center bg-primary ${
@@ -59,7 +59,7 @@ const Footer = (props) => {
               </div>
             </footer>
           );
-        } else if (currentPage == "/cart") {
+        } else if (currentPage === "/cart") {
           return (
             <footer
               className={`text-center bg-primary ${
